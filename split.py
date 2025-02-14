@@ -18,7 +18,7 @@ def split_audio(input_file, segment_duration=300):  # duration in milliseconds
         segment = audio[start_time:end_time]
         
         # Export segment
-        output_filename = f"split_2_{i}.wav"
+        output_filename = f"./Binary_Drone_Audio/yes_drone/new_{i}.wav"
         segment.export(output_filename, format="wav")
         print(f"Created: {output_filename}")
 
